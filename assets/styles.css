@@ -8,7 +8,6 @@
   padding: 0;
   margin: 0;
   border: 1px solid blue;
-  white-space: nowrap;
 }
 
 header {
@@ -41,12 +40,31 @@ header h1 {
   vertical-align: top;
 }
 
+
 .ordenes {
-  height: 30vh;
+  min-height: 30vh;
   background-color: white;
+}
+
+.pizza-orden {
+  background-color: brown;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 10px 15px;
+  width: 300px;
+}
+
+.pizza-orden img {
+  width: 100%;
 }
 
 footer {
   height: 30vh;
   background-color: black;
+}
+
+input {
+  font-size: 25px;
+  border-radius: 5px;
+  width: 200px;
 }

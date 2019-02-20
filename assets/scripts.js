@@ -1,20 +1,30 @@
 console.log('yey!');
 
-
+//form
 const pizzaForm = document.querySelector('#pizza-form');
+//inputs
 const pizza = document.querySelector('#pizza');
-const lista = document.querySelector('#lista');
-
-console.log(pizzaForm);
+const pizzaSize = document.getElementById('size');
+//section
+const list = document.querySelector('#lista');
 
 
 pizzaForm.addEventListener('submit', function(event){
   event.preventDefault();
-  console.log('Hemos detenido el submit');
-  const saborPizza = pizza.value;
-  console.log(saborPizza);
-  // lista.innerHTML += 'Tu pizza es sabor: ' + saborPizza;
-  lista.innerHTML += `<li>Tu pizza es sabor: ${saborPizza} </li>`;
+
+  const pizzaFlavor = pizza.value;
+  const sizeValue = pizzaSize.value;
+
+  list.innerHTML += `
+    <div class="pizza-orden">
+      <h3>Pidieron una pizza ${pizzaFlavor}</h3>
+      <p>De tamaño ${sizeValue}</p>
+      <p>Otra cosa</p>
+      <img src="pizza.png">
+      <input id="confirm-button" type="button" value="confirmar">
+    </div>
+  `
+
 });
 
 

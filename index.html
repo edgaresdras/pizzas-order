@@ -16,13 +16,22 @@
       <section class="pedidos">
 
         <form id="pizza-form">
+
           <label for="pizza">Elige tu pizza</label>
-          <input id="pizza" type="text" name="pizza" placeholder="peperoni" value="hawainan">
+          <input id="pizza" class="area" type="text" name="pizza" placeholder="peperoni">
+
+          <label for="size">Tamaño</label>
+          <select name="size" id="size">
+            <option value="sm">Chica</option>
+            <option value="md">Mediana</option>
+            <option value="lg">Grande</option>
+            <option value="xl">Familiar</option>
+          </select>
+
           <input type="submit" value="pide tu pizza ;D">
         </form>
 
-      </section>
-      <section class="pizzas"></section>
+      </section><section class="pizzas"></section>
     </main>
 
     <section class="ordenes">
@@ -32,5 +41,6 @@
     <footer></footer>
 
     <script src="assets/scripts.js"></script>
+
   </body>
 </html>
