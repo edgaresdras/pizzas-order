@@ -9,7 +9,8 @@
   </head>
   <body>
     <header>
-      <h1>Pizzas El tio Edgar</h1>
+      <img src="assets/img/giordanos-logo.PNG" alt="giordanos-logo">
+      <h1>Pizzas El tio Edgar</h1> 
     </header>
 
     <main>
@@ -17,28 +18,49 @@
 
         <form id="pizza-form">
 
-          <label for="pizza">Elige tu pizza</label>
-          <input id="pizza" class="area" type="text" name="pizza" placeholder="peperoni">
+          <label for="phone">Telefono</label>
+          <input type="tel" name="name">
 
+          <label for="name">Nombre</label>
+          <input type="text" name="name"><br>
+
+          <label for="pizza">Elige tu pizza</label>
+          <!-- <input id="pizza" class="area" type="text" name="pizza" placeholder="peperoni"><br> -->
+          <select name="pizza" id="pizza">
+              <option value="Carnes Frias">Carnes Frias</option>
+              <option value="Hawaiana">Hawaiana</option>
+              <option value="Pepperoni">Pepperoni</option>
+          </select><br>
+  
           <label for="size">Tamaño</label>
           <select name="size" id="size">
-            <option value="sm">Chica</option>
-            <option value="md">Mediana</option>
-            <option value="lg">Grande</option>
-            <option value="xl">Familiar</option>
-          </select>
+            <option value="Chica">Chica</option>
+            <option value="Mediana">Mediana</option>
+            <option value="Grande">Grande</option>
+            <option value="Extra grande">Familiar</option>
+          </select><br>
 
-          <input type="submit" value="pide tu pizza ;D">
+          <label for="coupon" class="coupon">¿Cupon de descuento?</label>  
+          <input type="checkbox" class="coupon" name="coupon" value="Si">Si<br>
+
+          <label for="couponCode">Inserta la clave del cupon</label>  
+          <input type="text" name="couponCode">
+
+          <input type="submit" value="Confirma">
         </form>
 
-      </section><section class="pizzas"></section>
+      </section><section class="pizzas">
+        <img src="assets/img/promo_pizza.gif" alt="promo_pizza">
+      </section>
     </main>
 
     <section class="ordenes">
       <ul id="lista"></ul>
     </section>
 
-    <footer></footer>
+    <footer>
+      <p>2019 Ⓒ Giordanos. Todos los derechos reservados. Términos y condiciones</p>
+    </footer>
 
     <script src="assets/scripts.js"></script>
 
